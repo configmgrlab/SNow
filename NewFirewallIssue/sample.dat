@@ -1,0 +1,25 @@
+{
+    "Environment": "Dev",
+    "Source": "VLAN_1",
+    "SystemName": "SCCM",
+    "Destination": "VLAN_2",
+    "Ports": [
+        {
+            "ports_mrv": 445,
+            "tcp_mrv": "TCP"
+        },
+        {
+            "ports_mrv": 22,
+            "tcp_mrv": "UDP"
+        },
+        {
+            "ports_mrv": 21,
+            "tcp_mrv": "Both"
+        }
+    ],
+    "Reason": "I am writing to request the configuration of specific firewall rules to allow the smooth operation of System Center Configuration Manager (SCCM) in our network environment. SCCM is a critical tool used for managing and deploying software, updates, and operating systems across our infrastructure. For SCCM to function effectively, communication between clients, servers, and other associated services must be facilitated by opening the required network ports.",
+    "TechnicalDetails": "The opening of these ports is necessary for Client-Server Communication - Ensuring SCCM clients can report their status, download policies, and retrieve content from the Distribution Point (DP). Software Deployment - Enabling seamless software and patch distribution to endpoints. Remote Management - Supporting SCCM-based remote control and troubleshooting of client machines. Reporting - Allowing reporting services to function and provide insights on system health and compliance.",
+    "ServiceNowRequestId": "RITM23123",
+    "SLA": "2024-12-24",
+    "UserMail": "nkj@jysk.com"
+}
