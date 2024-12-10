@@ -25,7 +25,7 @@ $Description = "Reason: `n$($Request.Body.Reason)`n`nTechnical Details: `n$($Req
 
 
 # Convert Date
-$SLADate = Get-Date ($Request.Body.SLA) -Format yyyy-MM-dd
+$SLADate = Get-Date -Date $Request.Body.SLA -Format yyyy-MM-dd
 
 # Splatting for the New-JSKJiraIssue cmdlet
 $Splat = @{
